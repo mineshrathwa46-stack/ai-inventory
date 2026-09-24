@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900">
-                  StockPulse<span className="text-indigo-600">AI</span>
+                  STOCKTINE<span className="text-indigo-600">AI</span>
                 </span>
               </div>
             </div>

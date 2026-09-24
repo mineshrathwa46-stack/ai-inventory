@@ -40,7 +40,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`🚀 StockPulse AI server running at http://localhost:${PORT}`);
+    console.log(`🚀 STOCKTINE AI server running at http://localhost:${PORT}`);
   });
 }
 

@@ -118,7 +118,7 @@ export const ReceiptModal: React.FC<ReceiptModalProps> = ({
 
           <div className="mt-4 pt-2 border-t border-slate-200 text-center text-[9px] text-slate-400">
             <p>Thank you for shopping with us!</p>
-            <p className="mt-0.5">Powered by StockPulse AI Platform</p>
+            <p className="mt-0.5">Powered by STOCKTINE AI Platform</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: stockpulse-ai
+    name: stocktine-ai
     runtime: node
     plan: free
     buildCommand: npm run build

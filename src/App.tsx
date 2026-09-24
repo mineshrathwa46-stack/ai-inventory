@@ -273,7 +273,7 @@ export default function App() {
           {loading ? (
             <div className="py-24 text-center">
               <div className="animate-spin w-10 h-10 border-4 border-indigo-600 border-t-transparent rounded-full mx-auto mb-3" />
-              <div className="text-sm font-bold text-slate-700">Loading StockPulse Intelligence...</div>
+              <div className="text-sm font-bold text-slate-700">Loading STOCKTINE Intelligence...</div>
               <p className="text-xs text-slate-400 mt-1">Calibrating velocity vectors and supplier lead buffers</p>
             </div>
           ) : (

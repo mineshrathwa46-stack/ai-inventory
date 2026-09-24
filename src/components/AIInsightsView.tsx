@@ -38,7 +38,7 @@ export const AIInsightsView: React.FC<AIInsightsViewProps> = ({
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
     {
       sender: 'ai',
-      text: `Hello! I am your StockPulse AI Inventory Advisor for ${storeName}. I've synthesized your current 30-day velocity, supplier lead times, and profit margins. How can I assist your purchasing decisions today?`,
+      text: `Hello! I am your STOCKTINE AI Inventory Advisor for ${storeName}. I've synthesized your current 30-day velocity, supplier lead times, and profit margins. How can I assist your purchasing decisions today?`,
       time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
   ]);
@@ -190,7 +190,7 @@ export const AIInsightsView: React.FC<AIInsightsViewProps> = ({
           <div className="flex items-center gap-2">
             <Bot className="w-5 h-5 text-indigo-600" />
             <h2 className="text-sm font-black text-slate-900">
-              Ask StockPulse Copilot (Grounded in Live Store Data)
+                  Ask STOCKTINE Copilot (Grounded in Live Store Data)
             </h2>
           </div>
           <span className="text-[11px] font-medium text-slate-400">

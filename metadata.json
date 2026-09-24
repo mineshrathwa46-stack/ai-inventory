@@ -1,5 +1,5 @@
 {
-  "name": "StockPulse AI - Inventory Intelligence Platform",
+  "name": "STOCKTINE AI - Inventory Intelligence Platform",
   "description": "AI-powered inventory intelligence, predictive demand forecasting, smart restocking, and sales analytics for small retail businesses.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_AI_API"]

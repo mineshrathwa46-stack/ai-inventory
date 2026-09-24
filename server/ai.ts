@@ -226,7 +226,7 @@ export async function askInventoryAI(userQuestion: string): Promise<string> {
       suppliers: suppliers.map((s) => ({ name: s.name, leadTime: `${s.leadTimeDays} days`, rating: s.rating }))
     };
 
-    const prompt = `You are "StockPulse AI", the expert retail inventory consultant for ${storeInfo.name} (${storeInfo.category}).
+    const prompt = `You are "STOCKTINE AI", the expert retail inventory consultant for ${storeInfo.name} (${storeInfo.category}).
 Here is the current live store state:
 ${JSON.stringify(context, null, 2)}
 

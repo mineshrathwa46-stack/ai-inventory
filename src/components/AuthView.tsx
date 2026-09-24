@@ -49,7 +49,7 @@ export const AuthView: React.FC<AuthViewProps> = ({ onAuthenticated }) => {
             <Sparkles className="w-5 h-5" />
           </div>
           <div>
-            <h1 className="text-xl font-black text-slate-900">StockPulse<span className="text-indigo-600">AI</span></h1>
+            <h1 className="text-xl font-black text-slate-900">STOCKTINE<span className="text-indigo-600">AI</span></h1>
             <p className="text-xs text-slate-500">Inventory intelligence for your store</p>
           </div>
         </div>
