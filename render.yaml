@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: stockpulse-ai
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AI_API_KEY
+        sync: false

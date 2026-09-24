@@ -1,0 +1,206 @@
+import { Product, Supplier, SaleTransaction, PurchaseRecord, User } from '../src/types/index.ts';
+
+export interface StorePreset {
+  id: string;
+  name: string;
+  category: string;
+  currency: string;
+  currencySymbol: string;
+  products: Product[];
+  suppliers: Supplier[];
+  sales: SaleTransaction[];
+  purchases: PurchaseRecord[];
+}
+
+export function createStore(user?: User): StorePreset {
+  return {
+    id: user?.id || 'store-unassigned',
+    name: user?.storeName || '',
+    category: user?.storeCategory || '',
+    currency: 'INR',
+    currencySymbol: '₹',
+    products: [
+      {
+        id: 'prod-001',
+        name: 'Arabica Coffee 250g',
+        sku: 'BEV-001',
+        category: 'Beverages',
+        sellingPrice: 320,
+        purchasePrice: 220,
+        currentStock: 42,
+        minStockLevel: 15,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 68,
+        shelfLocation: 'Aisle 1 - Bay A',
+        batchNumber: 'B-2026-01',
+        expiryDate: '2027-06-30',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-002',
+        name: 'Green Tea 25 Bags',
+        sku: 'BEV-002',
+        category: 'Beverages',
+        sellingPrice: 180,
+        purchasePrice: 115,
+        currentStock: 28,
+        minStockLevel: 12,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 41,
+        shelfLocation: 'Aisle 1 - Bay B',
+        batchNumber: 'B-2026-02',
+        expiryDate: '2027-08-31',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-003',
+        name: 'Whole Wheat Bread',
+        sku: 'GRC-001',
+        category: 'Groceries',
+        sellingPrice: 55,
+        purchasePrice: 38,
+        currentStock: 9,
+        minStockLevel: 18,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 96,
+        shelfLocation: 'Aisle 2 - Bay A',
+        batchNumber: 'B-2026-03',
+        expiryDate: '2026-09-28',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-004',
+        name: 'Basmati Rice 5kg',
+        sku: 'GRC-002',
+        category: 'Groceries',
+        sellingPrice: 620,
+        purchasePrice: 510,
+        currentStock: 16,
+        minStockLevel: 10,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 24,
+        shelfLocation: 'Aisle 2 - Bay C',
+        batchNumber: 'B-2026-04',
+        expiryDate: '2028-01-31',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-005',
+        name: 'Dark Chocolate 70%',
+        sku: 'SNK-001',
+        category: 'Snacks',
+        sellingPrice: 150,
+        purchasePrice: 95,
+        currentStock: 7,
+        minStockLevel: 12,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 52,
+        shelfLocation: 'Aisle 3 - Bay A',
+        batchNumber: 'B-2026-05',
+        expiryDate: '2027-03-31',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-006',
+        name: 'Roasted Almonds 200g',
+        sku: 'SNK-002',
+        category: 'Snacks',
+        sellingPrice: 240,
+        purchasePrice: 165,
+        currentStock: 35,
+        minStockLevel: 10,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 37,
+        shelfLocation: 'Aisle 3 - Bay B',
+        batchNumber: 'B-2026-06',
+        expiryDate: '2027-05-31',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-007',
+        name: 'Liquid Hand Wash 250ml',
+        sku: 'HPC-001',
+        category: 'Household',
+        sellingPrice: 125,
+        purchasePrice: 78,
+        currentStock: 21,
+        minStockLevel: 10,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 29,
+        shelfLocation: 'Aisle 4 - Bay A',
+        batchNumber: 'B-2026-07',
+        expiryDate: '2028-02-28',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-008',
+        name: 'Laundry Detergent 2kg',
+        sku: 'HPC-002',
+        category: 'Household',
+        sellingPrice: 290,
+        purchasePrice: 205,
+        currentStock: 4,
+        minStockLevel: 8,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 18,
+        shelfLocation: 'Aisle 4 - Bay C',
+        batchNumber: 'B-2026-08',
+        expiryDate: '2028-04-30',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-009',
+        name: 'Cotton T-Shirt Basic',
+        sku: 'APP-001',
+        category: 'Apparel',
+        sellingPrice: 499,
+        purchasePrice: 280,
+        currentStock: 26,
+        minStockLevel: 8,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 14,
+        shelfLocation: 'Aisle 5 - Bay A',
+        batchNumber: 'B-2026-09',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      },
+      {
+        id: 'prod-010',
+        name: 'Notebook A5 Hardcover',
+        sku: 'STA-001',
+        category: 'Stationery',
+        sellingPrice: 160,
+        purchasePrice: 92,
+        currentStock: 19,
+        minStockLevel: 8,
+        supplierId: '',
+        supplierName: 'Direct Supplier',
+        unitsSold: 33,
+        shelfLocation: 'Aisle 6 - Bay A',
+        batchNumber: 'B-2026-10',
+        createdAt: '2026-09-01',
+        updatedAt: '2026-09-25'
+      }
+    ],
+    suppliers: [],
+    sales: [],
+    purchases: [],
+  };
+}
